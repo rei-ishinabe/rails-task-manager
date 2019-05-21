@@ -3,28 +3,19 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
   padding: 24px 36px;
-  color: #999;
+  color: #ccc;
   font-family: Stylish;
 }
 
 h1 {
   font-family: stylish;
+  color: #555;
 }
 
 
 h2, h3, a, p, div {
   font-family: Kodchasan;
-}
-
-
-a {
-  text-decoration: none;
-  color: #333;
-  opacity: 0.8;
-  &:hover {
-    opacity: 1.0;
-    font-weight: 500;
-  }
+  color: #555;
 }
 
 .task-details {

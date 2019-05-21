@@ -9,5 +9,8 @@
     <%= f.text_field :details, class:'form-control' %>
   </div>
 
-  <%= f.submit class:'btn btn-primary' %>
+  <%= f.submit class:'btn btn-primary d-inline-block' %>
+  <%= link_to tasks_path, class:'d-inline-block float-right' do %>
+   <i class="fas fa-undo-alt"></i> Back to list
+  <% end %>
 <% end %>

@@ -1,7 +1,14 @@
 <h1>My tasks</h1>
 <% @tasks.each do |task| %>
   <div class="task">
-    <%= task.completed ? '☑':'□' %> <%= link_to task.title, task_path(task) %>
+    <%= link_to task_path(task) do %>
+      <% if task.completed %>
+        <i class="fas fa-check"></i>
+      <% else %>
+        <i class="fas fa-check" style="opacity: 0.1"></i>
+      <% end %>
+      <%= task.title %> - <%= task.details %>
+    <% end %>
     <%= link_to task_path(task), method: :delete, data: { confirm: "Are you sure?" } do %>
        <i class="fas fa-trash-alt"></i>
     <% end %>
